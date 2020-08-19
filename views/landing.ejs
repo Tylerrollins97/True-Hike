@@ -1,0 +1,63 @@
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>True Hike</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="/stylesheets/landing.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" type="text/javascript" async></script>
+    </head>
+    <body>
+
+    <div class="container">
+        <% if(error && error.length > 0){ %>
+            <div class="alert alert-danger" role="alert">
+                <%= error %>
+            </div>
+        <% } %>
+        <% if(success && success.length > 0){ %>
+            <div class="alert alert-success" role="alert">
+                <%= success %>
+            </div>
+        <% } %>
+    </div>
+
+
+    <div class="landing-nav">
+      <div class="list">
+          <%  if(!currentUser){ %>
+            <a id="login"  class="circle" href="/login">Login</a>
+            <a id="register"  class="circle" href="/register">Sign Up</a>
+        <%  } else { %>
+            <a href="#" id="login" class="circle" >Signed In As <%= currentUser.username %></a>
+            <a href="/logout" id="register"  class="circle" >Logout</a>
+        <%  } %>
+      </div>
+    </div>
+
+    <div id="landing-header">
+ 		<h1>True Hike</h1>
+		<a href="/campgrounds" class="btn btn-md btn-light">View All Trails</a>
+    </div>
+
+    <div id="search-header">
+      <p>
+        <form action="/campgrounds" method="GET">
+          <input class="search" type="text" name="search" placeholder="Search Hikes" aria-label="Search">
+          <button class="btn btn-outline-light" type="submit" name="Search">Go</button>
+        </form>
+      </p>
+    </div>
+
+
+
+
+    <ul class="slideshow">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+<% include ('partials/footer') %>

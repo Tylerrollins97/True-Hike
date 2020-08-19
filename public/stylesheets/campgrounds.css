@@ -1,0 +1,25 @@
+
+.container h1{
+  font-family: 'Bebas Neue', cursive;
+}
+
+.container p{
+  font-family: 'Roboto', sans-serif;
+}
+/* Thumbnail styles */
+.thumbnail img {
+    width: 100%;
+}
+
+.thumbnail {
+    font-family: 'Roboto', sans-serif;
+    padding: 0;
+}
+
+.thumbnail .caption-full {
+    padding: 9px;
+}
+
+.thumbnail{
+      box-shadow: .1em 0 .7em grey;
+}

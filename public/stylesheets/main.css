@@ -1,0 +1,46 @@
+.container{
+  width: 90%;
+  height: 100%;
+}
+
+.delete-form {
+  display: inline;
+}
+
+/* Google Maps */
+#map {
+    height: 35vh;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: .1em 0.2em .7em grey;
+}
+
+.view-all {
+  display: inline;
+}
+
+.checked {
+    color: orange;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+
+/* NAVBAR */
+.navbar-header a{
+font-family: 'Bebas Neue', cursive;
+}
+
+li{
+  font-family: 'Roboto', sans-serif;
+}
+
+a{
+  font-family: 'Roboto', sans-serif;
+}
