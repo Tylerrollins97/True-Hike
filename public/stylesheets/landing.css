@@ -14,6 +14,7 @@ body {
   color: #fff;
   font-size: 56px;
   font-family: 'Bebas Neue', cursive;
+  text-align: center;
 }
 
 /* LOGIN BUTTONS */
@@ -58,6 +59,12 @@ body {
   color: black;
   background-color: white;
 }
+
+/* .shading{
+  margin: 0vh 45vw 1vh 45vw;
+  border-radius: 15px;
+  box-shadow: .1em 0 .5em black;
+} */
 
 
 /* SEARCH BAR */

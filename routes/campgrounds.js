@@ -5,7 +5,7 @@ var middleware = require("../middleware");
 var Review = require("../models/review");
 const  request = require("request");
 const bodyParser = require('body-parser');
-let apiKey = 'abd88d0f88e03ed0e64ed386a20ccdd0';
+let apiKey = process.env.MAPS_API_KEY;
 var NodeGeocoder = require('node-geocoder');
 
 var options = {
